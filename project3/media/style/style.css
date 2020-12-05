@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-family: 'Helvetica', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: grid;
+    grid-auto-flow: row;
+}
+
+header{
+    display: grid;
+    align-content: center;
+    height: 5rem;
+    width: 100%;
+    background-color: #1d1d1d;
+}
+
+header h1{
+    font-family: 'Helvetica';
+    font-size: 2rem;
+    text-align: center;
+}
+
+nav {
+    display: grid;
+    width: 100%;
+    box-shadow: 0 0 6px 1px #cf0e0e;
+    position: sticky;
+    top: 0;
+    background-color: #1d1d1d;
+}
+
+nav div {
+    display: none;
+    grid-auto-flow: row;
+}
+
+nav > div > a{
+    text-align: center;
+    text-decoration: none;
+    color:#ffffff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 200ms ease-in-out;
+}
+
+nav > div > a:hover, a.active{
+    background-color: #a71010;
+}
+
+nav > img{
+    width: 2rem;
+    height: 2rem;
+    padding: 1rem;
+    justify-self: end;
+}
+
+nav > img:hover{
+    cursor: pointer;
+}
+
+.show{
+    display: grid;
+}
+
+section{
+    display: grid;
+    height: 42vh;
+    width: 92vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 4vh 4vw;
+    grid-auto-flow: row;
+}
+
+.egypt {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('../images/egypt/egypt3.jpg');
+}
+
+section h2 {
+    font-size: 2rem;
+    text-align: center;
+    transition: all 1s;
+}
+
+section:hover h2 {
+    color: #ff0000;
+}
+
+section p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+section .btn {
+    display: grid;
+    align-content: end;
+    justify-content: center;
+}
+
+section .btn a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.3rem;
+    padding: 0.7rem 1.4rem;
+    border-radius: 1rem;
+    border: 1px solid #ffffff;
+    transition: all 1s;
+}
+
+section .btn a:hover {
+    background-color: #ff0000;
+    color: #000000;
+    border-color: #000000;
+}
+
+
+@media (min-width:800px){
+    nav div{
+        display: grid;
+        grid-auto-flow: column;
+    }
+    nav > img{
+        display: none;
+    }
+    section .btn {
+        justify-content: end;
+    }
+}
+
+
