@@ -188,6 +188,13 @@ ol li, ul li, p {
     background-color: #790202;
 }
 
+footer{
+    text-align: center;
+    padding: 4rem 0;
+    font-size: 2rem;
+    border-top: 2px solid #ff0000;
+}
+
 @media (min-width:800px){
     section{
         height: 70vh;
