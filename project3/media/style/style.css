@@ -24,6 +24,7 @@ header{
 header img{
     width: 2rem;
     place-self: center;
+    margin: 1rem;
 }
 header h1{
     font-family: 'Helvetica';
