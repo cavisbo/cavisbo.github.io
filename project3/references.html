@@ -1,78 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>References</title>
     <link rel="stylesheet" href="media/style/style.css">
 </head>
+
 <body>
 
-    <h1>Architecture of old civilizations</h1>
+    <header>
+        <h1>Architecture of old civilizations</h1>
+    </header>
 
     <nav>
-        <div class="index">
+
+        <img onclick="toggleMenu()" src="media/images/icons/menu.svg" alt="">
+
+        <div id="menu">
             <a href="index.html">Homepage</a>
-        </div>
 
-        <div class="egypt">
-            <a href="egypt.html">Ancient Egyptian Architecture</a>
-        </div>
+            <a href="egypt.html">Ancient Egypt</a>
 
-        <div class="meso">
-            <a href="mesopotamia.html">Architecture of Mesopotamia</a>
-        </div>
+            <a href="mesopotamia.html">Mesopotamia</a>
 
-        <div class="greece">
-            <a href="greece.html">Ancient Greek Architecture</a>
-        </div>
+            <a href="greece.html">Ancient Greece</a>
 
-        <div class="rome">
-            <a href="rome.html">Ancient Roman Architecure</a>
-        </div>
+            <a href="rome.html">Ancient Rome</a>
 
-        <div class="ref">
-            <a href="references.html">References</a>
+            <a class="active" href="references.html">References</a>
         </div>
     </nav>
-    
+
     <div>
-
         <h1>References</h1>
+    </div>
 
+    <div>
         <h2>Egypt</h2>
+        <div>
+            <a href="https://en.wikipedia.org/wiki/Ancient_Egypt">https://en.wikipedia.org/wiki/Ancient_Egypt</a>
+            <a href="https://www.history.com/topics/ancient-history/ancient-egypt">https://www.history.com/topics/ancient-history/ancient-egypt</a>
+            <a href="https://www.britannica.com/place/ancient-Egypt">https://www.britannica.com/place/ancient-Egypt</a>
+        </div>
+    </div>
 
-        <a href="https://en.wikipedia.org/wiki/Ancient_Egypt">https://en.wikipedia.org/wiki/Ancient_Egypt</a>
-        <br>
-        <a href="https://www.history.com/topics/ancient-history/ancient-egypt">https://www.history.com/topics/ancient-history/ancient-egypt</a>
-        <br>
-        <a href="https://www.britannica.com/place/ancient-Egypt">https://www.britannica.com/place/ancient-Egypt</a>
-
+    <div>
         <h2>Mesopotamia</h2>
 
-        <a href="https://en.wikipedia.org/wiki/Mesopotamia">https://en.wikipedia.org/wiki/Mesopotamia</a>
-        <br>
-        <a href="https://www.history.com/topics/ancient-middle-east/mesopotamia">https://www.history.com/topics/ancient-middle-east/mesopotamia</a>
-        <br>
-        <a href="https://www.khanacademy.org/humanities/world-history/world-history-beginnings/ancient-mesopotamia/a/mesopotamia-article">https://www.khanacademy.org/humanities/world-history/world-history-beginnings/ancient-mesopotamia/a/mesopotamia-article</a>
+        <div>
+            <a href="https://en.wikipedia.org/wiki/Mesopotamia">https://en.wikipedia.org/wiki/Mesopotamia</a>
+            <a href="https://www.history.com/topics/ancient-middle-east/mesopotamia">https://www.history.com/topics/ancient-middle-east/mesopotamia</a>
+            <a href="https://www.khanacademy.org/humanities/world-history/world-history-beginnings/ancient-mesopotamia/a/mesopotamia-article">https://www.khanacademy.org/humanities/world-history/world-history-beginnings/ancient-mesopotamia/a/mesopotamia-article</a>
+        </div>
+    </div>
 
+    <div>
         <h2>Greece</h2>
 
-        <a href="https://en.wikipedia.org/wiki/Ancient_Greece">https://en.wikipedia.org/wiki/Ancient_Greece</a>
-        <br>
-        <a href="https://www.history.com/topics/ancient-history/ancient-greece">https://www.history.com/topics/ancient-history/ancient-greece</a>
-        <br>
-        <a href="https://www.britannica.com/place/ancient-Greece">https://www.britannica.com/place/ancient-Greece</a>
+        <div>
+            <a href="https://en.wikipedia.org/wiki/Ancient_Greece">https://en.wikipedia.org/wiki/Ancient_Greece</a>
+            <a href="https://www.history.com/topics/ancient-history/ancient-greece">https://www.history.com/topics/ancient-history/ancient-greece</a>
+            <a href="https://www.britannica.com/place/ancient-Greece">https://www.britannica.com/place/ancient-Greece</a>
 
-        <h2>Rome</h2>
-
-        <a href="https://en.wikipedia.org/wiki/Ancient_Rome">https://en.wikipedia.org/wiki/Ancient_Rome</a>
-        <br>
-        <a href="https://www.history.com/topics/ancient-rome/ancient-rome">https://www.history.com/topics/ancient-rome/ancient-rome</a>
-        <br>
-        <a href="https://www.nationalgeographic.org/topics/resource-library-ancient-rome/?q=&page=1&per_page=25">https://www.nationalgeographic.org/topics/resource-library-ancient-rome/?q=&page=1&per_page=25</a>
+        </div>
 
     </div>
 
+    <div>
+        <h2>Rome</h2>
+
+        <div>
+            <a href="https://en.wikipedia.org/wiki/Ancient_Rome">https://en.wikipedia.org/wiki/Ancient_Rome</a>
+            <a
+                href="https://www.history.com/topics/ancient-rome/ancient-rome">https://www.history.com/topics/ancient-rome/ancient-rome</a>
+            <a
+                href="https://www.nationalgeographic.org/topics/resource-library-ancient-rome/?q=&page=1&per_page=25">https://www.nationalgeographic.org/topics/resource-library-ancient-rome/?q=&page=1&per_page=25</a>
+
+        </div>
+
+    </div>
+    <script>
+        function toggleMenu() {
+            document.querySelector("#menu").classList.toggle("show");
+        }
+    </script>
+
 </body>
+
 </html>

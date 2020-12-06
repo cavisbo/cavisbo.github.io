@@ -8,34 +8,34 @@
 </head>
 <body>
 
-    <h1>Architecture of old civilizations</h1>
+    <header>
+
+        <h1>Architecture of old civilizations</h1>
+
+    </header>
 
     <nav>
-        <div class="index">
+
+        <img onclick="toggleMenu()" src="media/images/icons/menu.svg" alt="">
+
+        <div id="menu">
+            
             <a href="index.html">Homepage</a>
-        </div>
 
-        <div class="egypt">
-            <a href="egypt.html">Ancient Egyptian Architecture</a>
-        </div>
+            <a href="egypt.html">Ancient Egypt</a>
 
-        <div class="meso">
-            <a href="mesopotamia.html">Architecture of Mesopotamia</a>
-        </div>
+            <a class="active" href="mesopotamia.html">Mesopotamia</a>
 
-        <div class="greece">
-            <a href="greece.html">Ancient Greek Architecture</a>
-        </div>
+            <a href="greece.html">Ancient Greece</a>
 
-        <div class="rome">
-            <a href="rome.html">Ancient Roman Architecure</a>
-        </div>
+            <a href="rome.html">Ancient Rome</a>
 
-        <div class="ref">
             <a href="references.html">References</a>
+
         </div>
+
     </nav>
-    
+
     <div>
 
         <h1>Architecture of Mesopotamia</h1>
@@ -109,6 +109,12 @@
         </p>
 
     </div>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector("#menu").classList.toggle("show");
+        }
+    </script>
 
 </body>
 </html>

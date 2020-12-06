@@ -1,37 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ancient Greece</title>
     <link rel="stylesheet" href="media/style/style.css">
 </head>
+
 <body>
 
-    <h1>Architecture of old civilizations</h1>
+    <header>
+        <h1>Architecture of old civilizations</h1>
+    </header>
 
     <nav>
-        <div class="index">
+
+        <img onclick="toggleMenu()" src="media/images/icons/menu.svg" alt="">
+
+        <div id="menu">
             <a href="index.html">Homepage</a>
-        </div>
 
-        <div class="egypt">
-            <a href="egypt.html">Ancient Egyptian Architecture</a>
-        </div>
+            <a href="egypt.html">Ancient Egypt</a>
 
-        <div class="meso">
-            <a href="mesopotamia.html">Architecture of Mesopotamia</a>
-        </div>
+            <a href="mesopotamia.html">Mesopotamia</a>
 
-        <div class="greece">
-            <a href="greece.html">Ancient Greek Architecture</a>
-        </div>
+            <a class="active" href="greece.html">Ancient Greece</a>
 
-        <div class="rome">
-            <a href="rome.html">Ancient Roman Architecure</a>
-        </div>
+            <a href="rome.html">Ancient Rome</a>
 
-        <div class="ref">
             <a href="references.html">References</a>
         </div>
     </nav>
@@ -79,7 +76,7 @@
             Architecture of Ancient Greece is best known for its temples and Temple of Zeus at Olympia
             is the best example of their Architecture. Temple of Zeus belongs to Doric period.
             Some of other temples were: Temple of Hera at Olympia, Temple of Artemis at Ephesus
-            and Temple of Poseidon at Sounion. Greek men built templeses to honore their gods and the 
+            and Temple of Poseidon at Sounion. Greek men built templeses to honore their gods and the
             main god was Zeus.
         </p>
 
@@ -106,24 +103,24 @@
         <h2>Columns</h2>
 
         <img src="media/images/greece/greek3.png" width="300" height="auto">
-
-       
         <p>Columns were seperated into 3 periods: Doric, Ionic and Corinthian</p>
+        <ul>
+            <li>
+                <h3>Doric order</h3>
+                <p>Doric order was the simplest order and it was short and clean with circle tops and no base.</p>
 
-        <h3>Doric order</h3>
+            </li>
+            <li>
+                <h3>Ionic order</h3>
+                <p>Ionic order had a huge base and two opposed volutes </p>
 
-        <p>Doric order was the simplest order and it was short and clean with circle tops and no base.</p>
+            </li>
+            <li>
+                <h3>Corinthian Order</h3>
+                <p>Corinthian Order was seperated into four parts and that was thier best order.</p>
 
-        <h3>Ionic order</h3>
-
-        <p>Ionic order had a huge base and two opposed volutes </p>
-
-        <h3>Corinthian Order</h3>
-
-        <p>Corinthian Order was seperated into four parts and that was thier best order.</p>
-
-        <img src="media/images/greece/greek4.jpg" width="500" height="auto">
-
+            </li>
+        </ul>
     </div>
 
     <div>
@@ -133,6 +130,13 @@
         <p>Some of the most famous Greek Architects were: Callicrates, Libon, Xenarius and Metagenes</p>
 
     </div>
-    
+
+    <script>
+        function toggleMenu() {
+            document.querySelector("#menu").classList.toggle("show");
+        }
+    </script>
+
 </body>
+
 </html>

@@ -8,14 +8,15 @@
 body {
     display: grid;
     grid-auto-flow: row;
+    background-color: #1d1d1d;
 }
 
 header{
     display: grid;
     align-content: center;
     height: 5rem;
-    width: 100%;
     background-color: #1d1d1d;
+    padding: 1rem 0;
 }
 
 header h1{
@@ -68,17 +69,33 @@ nav > img:hover{
 
 section{
     display: grid;
-    height: 42vh;
-    width: 92vw;
+    height: 50vh;
+    width: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 4vh 4vw;
     grid-auto-flow: row;
+    transition: background-size 1s;
+}
+
+section *{
+    place-self: center;
 }
 
 .egypt {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('../images/egypt/egypt3.jpg');
+    background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('../images/egypt/egypt10.jpg');
+}
+
+.mesopotamia{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('../images/mesopotamia/meso7.JPG');
+}
+
+.greece{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('../images/greece/greek9.jpg');
+}
+
+.rome{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('../images/rome/rome10.jpg');
 }
 
 section h2 {
@@ -114,12 +131,76 @@ section .btn a {
 
 section .btn a:hover {
     background-color: #ff0000;
-    color: #000000;
-    border-color: #000000;
 }
 
+body > div, body > div > div {
+    display: grid;
+}
+
+body > div h1, body > div h2 {
+    text-align: center;
+}
+
+nav + div h1 {
+    color: #ff0000;
+}
+
+body > div {
+    display: grid;
+    grid-auto-flow: row;
+    margin: 2rem 1rem;
+}
+
+body > div img {
+    width: 100%;
+    height: auto;
+    place-self: center;
+}
+
+body > div > ol, body > div > ul {
+    place-self: center;
+}
+
+body > div  * {
+    margin: 1rem 0;
+}
+
+ol li, ul li, p {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    margin: 0 0 0 2rem;
+}
+
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #333;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #a71010;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #790202;
+}
 
 @media (min-width:800px){
+    section{
+        height: 70vh;
+    }
+
+    section > p{
+        font-size: 2rem;
+    }
+
+    section > h2{
+        font-size: 3rem;
+    }
+
     nav div{
         display: grid;
         grid-auto-flow: column;
@@ -130,6 +211,53 @@ section .btn a:hover {
     section .btn {
         justify-content: end;
     }
+    body > div img {
+        max-width: 800px;
+    }
+    body > div + div {
+        display: grid;
+        grid-template-areas:
+        "title title title"
+        "parag parag image"
+        "list list image";
+        max-width: 1200px;
+        place-self: center;
+    }
+    body > div h2 {
+        grid-area: title;
+    }
+    body > div > img {
+        grid-area: image;
+        place-self: unset;
+        margin: 1rem;
+    }
+    body > div > p {
+        grid-area: parag;
+    }
+    body > div > ol, body > div > ul  {
+        grid-area: list;
+        place-self: start;
+    }
+
+    .arch {
+        grid-auto-flow: row;
+    }
+
+    .arch div {
+        display: grid;
+        grid-auto-flow: row;
+        padding: 1rem;
+    }
+
+    .arch div img {
+        max-height: 400px;
+        width: auto;
+    }
+
+    .arch div h3, .arch div p {
+        text-align: center;
+    }
+
 }
 
 
