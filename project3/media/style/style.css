@@ -14,15 +14,22 @@ body {
 header{
     display: grid;
     align-content: center;
-    height: 5rem;
+    min-height: 5rem;
     background-color: #1d1d1d;
     padding: 1rem 0;
+    grid-auto-flow: row;
+    place-content: center;
 }
 
+header img{
+    width: 2rem;
+    place-self: center;
+}
 header h1{
     font-family: 'Helvetica';
     font-size: 2rem;
     text-align: center;
+    place-self: center;
 }
 
 nav {
@@ -196,6 +203,12 @@ footer{
 }
 
 @media (min-width:800px){
+    header {
+        grid-auto-flow: column;
+    }
+    header img{
+        margin: 0 1rem 0 0;
+    }
     section{
         height: 70vh;
     }
